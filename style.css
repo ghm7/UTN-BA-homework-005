@@ -12,6 +12,12 @@ main {
   & h1 {
     display: grid;
     place-items: center;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      filter: drop-shadow(0px 0px 5px CanvasText);
+      cursor: pointer;
+    }
   }
 }
 
@@ -40,12 +46,21 @@ p,
 li {
   transform-origin: top;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border-radius: 0.5rem;
 
   &:hover {
     cursor: pointer;
     background-color: CanvasText;
     color: Canvas;
   }
+}
+
+h2 {
+  padding: 1rem;
+}
+
+li {
+  padding: 0.2rem 1rem;
 }
 
 .strong {
