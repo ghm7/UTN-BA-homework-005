@@ -1,0 +1,53 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: Canvas;
+  color: CanvasText;
+  color-scheme: light dark;
+}
+
+main {
+  & h1 {
+    display: grid;
+    place-items: center;
+  }
+}
+
+img {
+  width: 400px;
+  height: 400px;
+
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    transform: scale(101%);
+    box-shadow: 0px 0px 15px -3px CanvasText;
+    cursor: pointer;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 5rem;
+}
+
+h2,
+p,
+li {
+  transform-origin: top;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: CanvasText;
+    color: Canvas;
+  }
+}
+
+.strong {
+  font-weight: bold;
+}
